@@ -1,0 +1,6 @@
+<h1>Dashboard Murid</h1>
+<ul>
+    <% files.forEach(file => { %>
+        <li><%= file.subject %>: <a href="/uploads/<%= file.filename %>"><%= file.originalname %></a></li>
+    <% }) %>
+</ul>

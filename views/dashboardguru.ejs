@@ -1,0 +1,11 @@
+<h1>Dashboard Guru</h1>
+<form method="POST" action="/upload" enctype="multipart/form-data">
+    <input type="text" name="subject" placeholder="Mata Pelajaran" required>
+    <input type="file" name="file" required>
+    <button type="submit">Unggah</button>
+</form>
+<ul>
+    <% files.forEach(file => { %>
+        <li><%= file.subject %>: <%= file.originalname %></li>
+    <% }) %>
+</ul>
